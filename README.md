@@ -2,7 +2,9 @@
 Introduction
 -------------
 
-`markdown` is a command line tool to convert a [Markdown](http://daringfireball.net/projects/markdown/) document into an HTML document.
+`mendel` is a command line tool to convert a [Markdown](http://daringfireball.net/projects/markdown/) document into an HTML document.
+
+Its name, `mendel`, was derived from the name of the 101st element in the periodic table of the elements: [Mendelevium](http://en.wikipedia.org/wiki/Mendelevium). The symbol of Mendelevium is Md, and `.md` is one of acceptable file extensions of Markdown. That is probably the only connection between Mendelevium and Markdown.
 
 
 Requirements
@@ -14,8 +16,8 @@ Requirements
 Usage
 ------
 
-    markdown < README.md
+    mendel < README.md
 
-    markdown < README.md > README.html
+    mendel < README.md > README.html
     
-    markdown --css=style.css < README.md
+    mendel --css=style.css < README.md

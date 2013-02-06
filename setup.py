@@ -1,5 +1,5 @@
 from setuptools import setup
-from markdown import __version__
+from mendel import __version__
 
 import distutils.cmd
 
@@ -10,15 +10,15 @@ class install_bin(distutils.cmd.Command):
         pass
 
 setup(
-    name='markdown',
+    name='mendel',
     version=__version__,
     author='Sumin Byeon',
     author_email='suminb@gmail.com',
     description='Command line tool to convert a Markdown document into an HTML document',
     license='LGPL',
     keywords='',
-    url='https://github.com/suminb/markdown',
-    py_modules=['markdown'],
+    url='https://github.com/suminb/mendel',
+    py_modules=['mendel'],
     long_description=open('README.md').read(),
     extras_require={'doc': ['Sphinx >=1.0']},
     classifiers=[

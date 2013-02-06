@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Usage: markdown [-h] [--css=CSS]
+"""Usage: mendel [-h] [--css=CSS]
 
 Converts
 
@@ -10,11 +10,11 @@ Options:
 
 """
 
-__all__ = ['markdown']
+__all__ = ['mendel']
 __version__ = '0.1.1'
 
 from docopt import docopt
-from markdown2 import markdown
+from mendel2 import mendel
 
 import sys
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         print '</head>'
         print '<body>'
     
-    print markdown(sys.stdin.read())
+    print mendel(sys.stdin.read())
 
     if args['--css'] != None:
         print '</body>'
