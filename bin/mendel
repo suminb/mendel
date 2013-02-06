@@ -10,11 +10,8 @@ Options:
 
 """
 
-__all__ = ['mendel']
-__version__ = '0.1.1'
-
 from docopt import docopt
-from mendel2 import mendel
+from markdown2 import markdown
 
 import sys
 
@@ -30,7 +27,7 @@ if __name__ == '__main__':
         print '</head>'
         print '<body>'
     
-    print mendel(sys.stdin.read())
+    print markdown(sys.stdin.read())
 
     if args['--css'] != None:
         print '</body>'

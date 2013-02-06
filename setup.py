@@ -1,13 +1,15 @@
 from setuptools import setup
-from mendel import __version__
+from distutils.command.install import install
+from mendel.version import __version__
 
-import distutils.cmd
+import os
 
-class install_bin(distutils.cmd.Command):
+class install_bin(install):
     """Installs executable binaries."""
 
     def run(self):
         pass
+
 
 setup(
     name='mendel',
@@ -19,8 +21,9 @@ setup(
     keywords='',
     url='https://github.com/suminb/mendel',
     py_modules=['mendel'],
+    scripts=['bin/mendel'],
     long_description=open('README.md').read(),
-    extras_require={'doc': ['Sphinx >=1.0']},
+    install_requires=['markdown2', 'docopt'],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Topic :: Utilities',
@@ -31,5 +34,5 @@ setup(
         'Programming Language :: Python :: 3.3',
         'License :: OSI Approved :: LGPL',
     ],
-    cmdclass={'install_bin': install_bin},
+    #cmdclass={'install': install_bin},
 )
