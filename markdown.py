@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """Usage: markdown [-h] [--css=CSS]
 
 Converts
