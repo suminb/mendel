@@ -10,6 +10,9 @@ Options:
 
 """
 
+__all__ = ['markdown']
+__version__ = '0.1.1'
+
 from docopt import docopt
 from markdown2 import markdown
 
