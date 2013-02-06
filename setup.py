@@ -20,8 +20,12 @@ setup(
     license='LGPL',
     keywords='',
     url='https://github.com/suminb/mendel',
-    py_modules=['mendel'],
-    scripts=['bin/mendel'],
+    packages=['mendel'],
+    #scripts=['bin/mendel'],
+    entry_points={
+        'console_scripts':
+            ['mendel = mendel:main'],
+    },
     long_description=open('README.md').read(),
     install_requires=['markdown2', 'docopt'],
     classifiers=[
