@@ -31,7 +31,7 @@ def main():
         print open(args['--embed'], 'r').read()
         print '</style>'
     
-    print markdown(sys.stdin.read())
+    print markdown(sys.stdin.read(), extras=['wiki-tables'])
 
     if args['--css'] != None:
         print '</body>'
