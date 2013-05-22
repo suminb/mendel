@@ -1,0 +1,32 @@
+body {
+	font-family: sans-serif;
+	font-size: 11pt;
+
+	width: 8.5in;
+	margin: 0.5in;
+}
+
+pre, code, tt {
+    font-size: 10pt;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+
+/*
+pre code {
+    margin: 0 2px;
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}
+*/
